@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link rel="stylesheet" href="https://pattern.kivan-works.com/fonts/kredit.css">
+  <style>
+    * {
+      background-repeat: no-repeat;
+    }
+
+    html {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    body {
+      height: 100%;
+      display: flex;
+      background: linear-gradient(125deg, #fbd7e5, #bdf4fa);
+    }
+
+    .card_body {
+      padding: 0.75rem 1.75rem;
+    }
+
+    .active .floating:before {
+      opacity: 1;
+      transition: 500ms;
+    }
+
+    .floating:before {
+      font-family: "Quicksand";
+      font-weight: bold;
+      content: "Keep Moving Your Mouse!";
+      width: 100%;
+      text-align: center;
+      font-size: 2rem;
+      position: absolute;
+      top: -70px;
+      opacity: 0;
+      transition: 300ms;
+      background: -webkit-linear-gradient(145deg, #4684c1, #343174);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .floating {
+      font-family: Inconsolata;
+      margin: auto;
+      width: 453px;
+      height: 280px;
+      box-shadow: -20px 14px 54px rgba(0, 0, 0, 0.55);
+      font-size: 18px;
+      border-radius: 8px;
+      transform-style: preserve-3d;
+      transform-origin: 50% 50%;
+      background: linear-gradient(145deg, #4684c1, #343174);
+      transform: rotateX(17deg) rotateY(18deg);
+    }
+
+    .logo {
+      height: 60px;
+      transform: translateZ(30px);
+      text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      margin: 0;
+      font-weight: normal;
+      filter: drop-shadow(-6.4px 6.2px 8px rgba(0, 0, 0, 0.6));
+      z-index: 20;
+      background-image: url("");
+    }
+
+     .chips {
+    margin-top: 17px;
+    margin-left: -1px;
+    height: 70px;
+    width: 80px;
+    filter: drop-shadow(-6.4px 6.2px 8px rgba(0, 0, 0, 0.6));
+    transform: translateZ(25px);
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='50px' x='0px' y='0px' viewBox='0 0 40 40' style='enable-background:new 0 0 40 40;' xml:space='preserve'%3E%3Cg id='surface1'%3E%3Cpath fill='%23F5CE42' d='M10,3.333c-4.602,0-8.333,3.731-8.333,8.333s3.731,8.333,8.333,8.333c4.602,0,8.333-3.731,8.333-8.333S14.602,3.333,10,3.333z%2F%3E%3Cpath fill='%23FFCC57' d='M10,1.667c-5.514,0-10,4.486-10,10s4.486,10,10,10c5.514,0,10-4.486,10-10S15.514,1.667,10,1.667z M10,21.667c-4.602,0-8.333-3.731-8.333-8.333S5.398,5,10,5c4.602,0,8.333,3.731,8.333,8.333S14.602,21.667,10,21.667z%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  }
+  
+  .footer {
+    text-align: center;
+    font-family: "Quicksand";
+    font-size: 1.5rem;
+    color: #fff;
+    margin-top: 1rem;
+    transform: translateZ(30px);
+  }
+  </style>
+</head>
+
+<body>
+  <div class="floating active">
+    <div class="card_body">
+      <h1 class="logo">My Logo</h1>
+      <div class="floating_content">
+        <div class="chips"></div>
+      </div>
+      <p class="footer">Keep Moving Forward!</p>
+    </div>
+  </div>
+</body>
+
+</html>
